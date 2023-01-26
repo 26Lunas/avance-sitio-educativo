@@ -1,0 +1,432 @@
+
+:root{
+    --colorFondo: white;
+    --colorficuras: #e8ebf1;
+    --colorAzulMarino: #1D3763;
+}
+
+.contenedor{
+    width: 100%;
+    background: var(--colorFondo);
+}
+/* Menu de navegación */
+.navbar{
+    /* border: solid 3px red; */
+    z-index: 20 !important;
+    width: 100%;
+    position: absolute !important;
+    top: 0 !important;
+    padding-left: 6% !important;
+    padding-right: 6% !important;
+    /* box-shadow: rgb(180, 180, 180) 2px 1px 5px; */
+}
+.navbar img{
+    width: 4.2em;
+}
+
+.btn-empezar{
+    
+    animation: brillo 2s linear infinite;
+    background: var(--colorAzulMarino) !important;
+    color: white !important;
+
+}
+.btn-empezar:hover{
+    border: solid 1px var(--colorAzulMarino) !important;
+    background: #274883 !important;
+}
+
+
+/* .loader::after, .loader::before{
+    animation: loader 2s linear infinite;
+    content: "";
+    border: solid 8px #fff;
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+}
+.loader::after{
+    opacity: 0;
+    animation-delay: 1s;
+} */
+
+/* @keyframes loader {
+    0%{
+        transform: scale(0);
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 0;
+    }
+} */
+@keyframes brillo {
+    0%{
+        box-shadow: #fff 0 8px 15px;
+        
+
+    }
+    50%{
+        box-shadow: var(--colorAzulMarino) 0 8px 20px;
+       
+    }
+    100%{
+        box-shadow: #fff 0 8px 25px;
+        
+
+    }
+}
+
+/* Menu en Movil */
+@media (max-width: 991px) {
+    .collapse{
+        background: #1d3763e5;
+        border-radius: 15px;
+        padding: 4%;
+        
+    }
+    .navbar-toggler:focus{
+        outline: none;
+        color: var(--colorAzulMarino) ;
+    }
+    .collapse a{
+        color: #fff !important;
+    }
+    .dropdown-menu{
+        background: none !important;
+        border: 0 !important;
+        border-left: 2px solid #274883 !important;
+    }
+}
+
+/*Fin menu de navegación */
+
+/* Portada */
+.contenedor-portada{
+    width: 100%;
+    height: 70vh;
+    /* border: solid red 3px; */
+    /* margin-bottom: 5%; */
+}
+.contenedor-portada .carousel{
+    width: 100%;
+    height: 100%;
+    /* border: solid rgb(72, 255, 0) 3px; */
+}
+.contenedor-portada .carousel-inner, .contenedor-portada .carousel-item{
+    width: 100%;
+    height: 100%;
+}
+.contenedor-portada img{
+    object-fit: contain;
+}
+
+.contenedor-portada svg{
+    width: 100%;
+    position: relative;
+    bottom: 35%;
+}
+.contenedor-portada svg path{
+    fill: var(--colorFondo);
+}
+.carousel-control-prev span, .carousel-control-next span{
+    border-radius: 50%;
+    padding: 18px !important;
+}
+
+.carousel-caption{
+    /* border: solid red 3px; */
+    width: 50%;
+    height: 40%;
+    position: absolute !important;
+    top: 15%;
+    left: 8% !important;
+    right: auto !important;
+    text-align: left !important;
+
+}
+.carousel-caption h5{
+    font-size: 35px;
+}
+.carousel-caption p{
+    font-size: 20px;
+}
+.carousel-indicators{
+    /* border: solid red 3px; */
+    position: absolute !important;
+    top: 55vh;
+}
+
+/* Ola en Movil */
+@media (max-width: 989px) {
+    .contenedor-portada svg{
+        /* border: solid 3px rgb(0, 255, 21); */
+        bottom: 30% !important;
+    }
+    .carousel-indicators{
+        /* border: solid rgb(255, 0, 242) 3px; */
+        top: 55vh;
+    }
+}
+@media ((max-width: 2000px) and (min-width: 1280px)) {
+    .carousel-indicators{
+        /* border: solid rgb(55, 0, 255) 3px; */
+        top: 55vh;
+    }
+    
+}
+@media (max-width: 705px){
+    .contenedor-portada svg{
+        /* border: solid 3px rgb(0, 255, 21); */
+        bottom: 43% !important;
+    }
+    .carousel-indicators{
+        /* border: solid rgb(55, 0, 255) 3px; */
+        top: 42vh;
+    }
+}
+@media (max-width: 580px){
+    .contenedor-portada svg{
+        /* border: solid 3px rgb(17, 0, 255); */
+        bottom: 50% !important;
+    }
+    .carousel-indicators{
+        /* border: solid rgb(55, 0, 255) 3px; */
+        top: 35vh;
+    }
+}
+@media (max-width: 515px){
+    .contenedor-portada svg{
+        border: solid 3px rgb(21, 255, 0);
+        bottom: 40% !important;
+    }
+    .carousel-indicators{
+        /* border: solid rgb(55, 0, 255) 3px; */
+        top: 33vh;
+    }
+    .contenedor-portada{
+        /* border: solid 3px red; */
+        width: 100% !important;
+        height: 50vh !important;
+    }
+}
+@media ((max-width: 457px) and (min-width: 405px)){
+    .contenedor-portada svg{
+        border: solid 3px rgb(217, 255, 0);
+        bottom: 45% !important;
+    }
+    .carousel-indicators{
+        /* border: solid rgb(55, 0, 255) 3px; */
+        top: 30vh;
+    }
+}
+@media (max-width: 406px){
+    .contenedor-portada svg{
+        display: none;
+    }
+    .carousel-indicators{
+        /* border: solid rgb(55, 0, 255) 3px; */
+        top: 25vh;
+    }
+    .contenedor-portada{
+        /* border: solid 3px red; */
+        width: 100% !important;
+        height: 30vh !important;
+    }
+    .cont-seccion-beneficio{
+        padding-top: 8%;
+    }
+
+}
+
+
+/* Fin portada */
+
+/* Sección valores o beneficio */
+.cont-seccion-beneficio, .cont-beneficios, .cont-beneficio{
+    display: flex;
+    align-items: center;
+}
+.cont-seccion-beneficio{
+    position: absolute;
+    /* border: solid red 3px; */
+    width: 100%;
+
+    flex-direction: column;
+
+}
+.cont-texto-subTitulo{
+    width: 80%;
+    text-align: center;
+}
+
+.cont-beneficios{
+    /* border: solid blue 3px; */
+    width: 80%;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 4%;
+}
+.cont-beneficio{
+    /* border: solid 3px forestgreen; */
+    width: 220px;
+    height: 120px;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-bottom: 3%;
+    text-align: center;
+    box-shadow: gray 1px 5px 15px;
+}
+.circulo-valor{
+    position: relative;
+    bottom: 24%;
+    width: 60px;
+    height: 80px;
+    border-radius: 50%;
+    background: gray;
+
+}
+
+
+
+/* Fin sección valores o beneficio */
+
+/* Sección acerca de nosotros */
+.cont-seccion-acercaDeNosotros, .cont-info-nosotros, .cont-seccion-mision, .cont-seccion-vision{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.cont-seccion-acercaDeNosotros{
+    /* border: solid red 3px; */
+    width: 100%;
+    background: linear-gradient(-23deg, var(--colorficuras) 50%, var(--colorFondo) 50%);
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+/* .cont-info-nosotros{
+    border: solid 3px red;
+} */
+.text-info-nosotros{
+    /* border: solid 3px red; */
+    width: 40%;
+}
+.text-info-nosotros h5{
+    font-size: 26px;
+    border-left: solid 5px rebeccapurple;
+    padding-left: 2%;
+}
+.cont-info-nosotros img{
+    width: 450px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: gray 1px 5px 10px;
+}
+
+.cont-seccion-mision{
+    /* border: solid rgb(0, 102, 255) 3px; */
+    width: 100%;
+    background: var(--colorficuras);
+
+}
+.cont-seccion-mision, .cont-seccion-vision{
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+.cont-seccion-vision{
+    /* border: solid red 3px; */
+    width: 100%;
+    background: linear-gradient( 341.5deg, var(--colorFondo) 50%, var(--colorficuras) 50%);
+}
+
+/*Fin sección acerca de nosotros */
+
+/* Sección equipo de trabajo */
+.cont-personal{
+    /* border: solid 3px red; */
+    width: 100%;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 5%;
+}
+
+.cont-text-personal, .cont-carrusel-personal{
+    width: 90%;
+    text-align: center;
+}
+
+
+/* Fin sección equipo de trabajo */
+
+/* Inicio pie de pagína */
+
+.pie-pagina,.cont-info-pie-pagina, .cont-creditos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+.pie-pagina{
+    /* border: solid 3px red; */
+    width: 100%;
+    background: var(--colorAzulMarino);
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 2%;
+    justify-content: space-between;
+    border-bottom: solid 2px #274883;
+    color: white;
+}
+.pie-pagina p{
+    margin: 1.5%;
+    color: #92a5c5;
+    cursor: pointer;
+}
+
+.cont-logo-info{
+    /* border: solid 3px yellow; */
+    width: 20%;
+}
+.cont-logo-info img{
+    width: 100%;
+    background: #fff;
+    border-radius: 10px;
+}
+.cont-info-pie-pagina{
+    /* border: solid 3px rgb(0, 255, 0); */
+    justify-content: space-around;
+    width: 70%;
+}
+
+.cont-recursos p:hover, .cont-eventos-piePagina p:hover, .cont-redesSociales-footer p:hover{
+    color: #96bcfd;
+}
+
+.efecto-curva-up{
+    /* border: solid 3px red; */
+    fill:var(--colorAzulMarino);
+    position: relative;
+    top: 1.5px;
+}
+
+
+.cont-creditos{
+    width: 100%;
+    background: var(--colorAzulMarino);
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 1%;
+    color: #92a5c5;
+}
+

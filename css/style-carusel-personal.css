@@ -1,0 +1,52 @@
+.cont-carrusel-personal{
+    /* border: solid 3px rgb(184, 63, 184); */
+    padding: 10px 40px;
+    overflow: hidden;
+  }
+  .cont-carrusel-personal .swiper-container{
+    width: 100%;
+    height: 100%;
+  }
+  
+  .cont-carrusel-personal .swiper-slide {
+    position: relative;
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    border-radius: 15px;
+    text-align: start;
+    box-shadow: 0px 4px 10px rgba(196, 196, 196, 0.25);
+   
+  }
+  .cont-carrusel-personal .swiper-slide img{
+     display: block;
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+  
+  }
+  .cont-carrusel-personal .swiper-slide .card-description{
+      padding:1rem 1rem;
+  }
+  .cont-carrusel-personal .swiper-slide .card-title,.cont-carrusel-personal .swiper-slide .card-text{
+     margin-bottom: .5rem;
+  }
+  .cont-carrusel-personal .swiper-slide .card-link{
+     text-align: center;
+    
+  }
+  .cont-carrusel-personal .swiper-slide .card-link a{
+      text-decoration: none;
+      color: #1d6ce2;
+  }
+  .swiper-button-next,   .swiper-button-prev{
+    position: relative;
+  }
+  .swiper-button-next{
+    right: -101% !important;
+  }
+  .swiper-button-prev{
+      left: -3.5% !important;
+  }
