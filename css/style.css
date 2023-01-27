@@ -198,7 +198,7 @@
 }
 @media (max-width: 515px){
     .contenedor-portada svg{
-        border: solid 3px rgb(21, 255, 0);
+        /* border: solid 3px rgb(21, 255, 0); */
         bottom: 40% !important;
     }
     .carousel-indicators{
@@ -213,7 +213,7 @@
 }
 @media ((max-width: 457px) and (min-width: 405px)){
     .contenedor-portada svg{
-        border: solid 3px rgb(217, 255, 0);
+        /* border: solid 3px rgb(217, 255, 0); */
         bottom: 45% !important;
     }
     .carousel-indicators{
