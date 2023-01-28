@@ -10,6 +10,10 @@
     --colorAzulMarinoClaro: #447498;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .contenedor{
     width: 100%;
     background: var(--colorFondo);
@@ -157,7 +161,9 @@
 .carousel-caption p{
     font-size: 20px;
 }
-
+.carousel-caption h5, .carousel-caption p{
+    text-shadow: var(--colorAzulMarino) 0 1px 1px;
+}
 .carousel-indicators{
     /* border: solid red 3px; */
     position: absolute !important;
@@ -174,6 +180,10 @@
         /* border: solid rgb(255, 0, 242) 3px; */
         top: 55vh;
     }
+    .carousel-caption h5{
+        /* border: solid 3px red; */
+        font-size: 3.4em;
+    }
 }
 @media ((max-width: 2000px) and (min-width: 1280px)) {
     .carousel-indicators{
@@ -181,6 +191,22 @@
         top: 55vh;
     }
     
+}
+@media (max-width: 779px) {
+    .text-info-nosotros{
+        /* border: solid 3px red !important; */
+        width: 450px !important;
+        margin-bottom: 6%;
+    }
+    .misionVision .cont-info-nosotros{
+        /* border: solid 3px red; */
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+    .cont-seccion-acercaDeNosotros, .cont-seccion-mision{
+        padding: 4% !important;
+    }
 }
 @media (max-width: 705px){
     .contenedor-portada svg{
@@ -208,6 +234,22 @@
         /* border: solid 3px rgb(68, 0, 255); */
         bottom: 36% !important;
     }
+    
+    
+}
+@media (max-width: 661px) {
+    .carousel-caption{
+        width: 54%;
+    }
+    .carousel-caption h5{
+        /* border: solid 3px red; */
+        font-size: 2.8em;
+        
+    }
+    .carousel-caption p{
+        /* border: solid 3px red; */
+        font-size: 18px;
+    }
 }
 @media ((max-width: 650px) and (max-height: 574px)){
     .contenedor-portada svg{
@@ -229,6 +271,69 @@
         top: 50vh;
     }
 }
+@media (max-width: 571px) {
+    .contenedor-portada svg{
+        /* border: solid 3px rgb(17, 0, 255); */
+        bottom: 55% !important;
+    }
+    .carousel-caption{
+        /* border: solid 3px rgb(0, 255, 242); */
+        width: 60% !important;
+        
+    }
+    .carousel-caption h5{
+        /* border: solid 3px red; */
+        font-size: 2.5em;
+        
+    }
+    .carousel-caption p{
+        /* border: solid 3px red; */
+        font-size: 18px;
+    }
+    
+}
+@media (max-width: 518px) {
+    .carousel-caption{
+        /* border: solid 3px rgb(0, 255, 242); */
+        width: 65% !important;
+        
+    }
+    
+    
+}
+@media (max-width: 571px) {
+    .contenedor-portada svg{
+        /* border: solid 3px rgb(17, 0, 255); */
+        bottom: 55% !important;
+    }
+    .carousel-caption{
+        /* border: solid 3px rgb(0, 255, 242); */
+        width: 60% !important;
+        
+    }
+    .carousel-caption h5{
+        /* border: solid 3px red; */
+        font-size: 2.5em;
+        
+    }
+    .carousel-caption p{
+        /* border: solid 3px red; */
+        font-size: 18px;
+    }
+    
+}
+@media (max-width: 515px){
+    .contenedor-portada{
+        /* border: solid 3px red; */
+        width: 100% !important;
+        height: 50vh !important;
+    }
+    .contenedor-portada svg{
+        /* border: solid 3px rgb(17, 0, 255); */
+        bottom: 42% !important;
+    }
+}
+
 @media ((max-width: 515px) and (max-height: 574px)){
     .contenedor-portada svg{
         /* border: solid 3px rgb(17, 0, 255); */
@@ -239,13 +344,39 @@
         top: 36vh;
     }
 }
-@media (max-width: 515px){
-    .contenedor-portada{
-        /* border: solid 3px red; */
-        width: 100% !important;
-        height: 50vh !important;
+@media (max-width: 489px) {
+
+    .cont-seccion-acercaDeNosotros{
+        margin-top: 4%;
     }
+
+    .cont-seccion-acercaDeNosotros img,.cont-seccion-acercaDeNosotros  .text-info-nosotros
+    ,.cont-seccion-mision img, .cont-seccion-mision .text-info-nosotros,
+    .cont-seccion-vision .text-info-nosotros, .cont-seccion-vision img{
+       /* border: solid 3px red; */
+       width: 350px !important;
+    }
+    .cont-seccion-acercaDeNosotros img, .cont-seccion-mision img, .cont-seccion-vision img{
+        /* border: solid 3px rgb(0, 255, 0); */
+        height: 250px !important;
+    }
+
 }
+@media (max-width: 479px) {
+    .carousel-caption{
+        /* border: solid 3px red; */
+        width: 65% !important;
+
+    }
+    .carousel-caption h5{
+        font-size: 39px;
+    }
+    .carousel-caption p{
+        font-size: 17px;
+    }
+    
+}
+
 @media ((max-width: 457px) and (max-height: 574px)){
     .contenedor-portada svg{
         /* border: solid 3px rgb(17, 0, 255); */
@@ -255,6 +386,12 @@
         /* border: solid rgb(55, 0, 255) 3px; */
         top: 36vh;
     }
+}
+@media (max-width: 433px) {
+    .carousel-caption p{
+        font-size: 15.7px;
+    }
+    
 }
 /*Fin Media query para pantallas mas pequemas */
 
