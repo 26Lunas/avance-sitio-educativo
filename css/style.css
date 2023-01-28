@@ -10,6 +10,10 @@
     --colorAzulMarinoClaro: #447498;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 .contenedor{
     width: 100%;
     background: var(--colorFondo);
@@ -188,6 +192,22 @@
     }
     
 }
+@media (max-width: 779px) {
+    .text-info-nosotros{
+        /* border: solid 3px red !important; */
+        width: 450px !important;
+        margin-bottom: 6%;
+    }
+    .misionVision .cont-info-nosotros{
+        /* border: solid 3px red; */
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+    .cont-seccion-acercaDeNosotros, .cont-seccion-mision{
+        padding: 4% !important;
+    }
+}
 @media (max-width: 705px){
     .contenedor-portada svg{
         /* border: solid 3px rgb(0, 255, 21); */
@@ -323,6 +343,24 @@
         /* border: solid rgb(55, 0, 255) 3px; */
         top: 36vh;
     }
+}
+@media (max-width: 489px) {
+
+    .cont-seccion-acercaDeNosotros{
+        margin-top: 4%;
+    }
+
+    .cont-seccion-acercaDeNosotros img,.cont-seccion-acercaDeNosotros  .text-info-nosotros
+    ,.cont-seccion-mision img, .cont-seccion-mision .text-info-nosotros,
+    .cont-seccion-vision .text-info-nosotros, .cont-seccion-vision img{
+       /* border: solid 3px red; */
+       width: 350px !important;
+    }
+    .cont-seccion-acercaDeNosotros img, .cont-seccion-mision img, .cont-seccion-vision img{
+        /* border: solid 3px rgb(0, 255, 0); */
+        height: 250px !important;
+    }
+
 }
 @media (max-width: 479px) {
     .carousel-caption{
