@@ -248,9 +248,9 @@
 }
 
 @media (max-width: 406px){
-    .contenedor-portada svg{
+    /* .contenedor-portada svg{
         display: none;
-    }
+    } */
     .carousel-indicators{
         /* border: solid rgb(55, 0, 255) 3px; */
         top: 25vh;
