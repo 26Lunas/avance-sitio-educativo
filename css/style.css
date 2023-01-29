@@ -27,8 +27,13 @@ body{
     top: 0 !important;
     padding-left: 6% !important;
     padding-right: 6% !important;
+    /* background: var(--colorFondo); */
     /* box-shadow: rgb(180, 180, 180) 2px 1px 5px; */
 }
+/* .navbar-nav{
+    background: #8297ab36;
+    
+} */
 .navbar img{
     width: 4.2em;
 }
@@ -92,10 +97,11 @@ body{
 /* Portada */
 .contenedor-portada{
     width: 100%;
-    height: 80vh;
+    height: 98vh;
     /* border: solid red 3px; */
     /* margin-bottom: 5%; */
     background: var(--colorficuras);
+    /* border: solid 3px red; */
 }
 .contenedor-portada .carousel{
     width: 100%;
@@ -134,7 +140,7 @@ body{
     left: 8% !important;
     right: auto !important;
     text-align: left !important;
-    background: #8297ab44;
+    background: #8297ab48;
     padding: 2%;
     border-radius: 15px;
     /* backdrop-filter: blur(3px); */
@@ -142,12 +148,13 @@ body{
 }
 .carousel-caption h5{
     font-size: 4.5em;
+    font-weight: 700;
 }
 .carousel-caption p{
-    font-size: 21px;
+    font-size: 22px;
 }
 .carousel-caption h5, .carousel-caption p{
-    text-shadow: var(--colorAzulMarino) 0 1px 1px;
+    text-shadow: var(--colorAzulMarinoClaro) 1px 10px 15px;
 }
 .carousel-indicators{
     /* border: solid red 3px; */
