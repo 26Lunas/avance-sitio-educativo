@@ -1,0 +1,268 @@
+/* Menu en Movil */
+@media (max-width: 991px) {
+    .collapse{
+        background: #1d3763e5;
+        border-radius: 15px;
+        padding: 4%;
+        
+    }
+    .navbar-toggler:focus{
+        outline: none;
+        color: var(--colorAzulMarino) ;
+    }
+    .collapse a{
+        color: #fff !important;
+    }
+    .dropdown-menu{
+        background: none !important;
+        border: 0 !important;
+        border-left: 2px solid var(--colorficuras) !important;
+    }
+}
+
+/*Fin menu de navegación */
+
+
+/* Ola en Movil */
+@media (max-width: 989px) {
+    .contenedor-portada svg{
+        /* border: solid 3px rgb(0, 255, 21); */
+        /* bottom: 30% !important; */
+    }
+    .carousel-indicators{
+        /* border: solid rgb(255, 0, 242) 3px; */
+        top: 55vh;
+    }
+    .carousel-caption h5{
+        /* border: solid 3px red; */
+        font-size: 3.4em;
+    }
+}
+@media ((max-width: 2000px) and (min-width: 1280px)) {
+    .carousel-indicators{
+        /* border: solid rgb(55, 0, 255) 3px; */
+        top: 55vh;
+    }
+    
+}
+@media (max-width: 779px) {
+    .text-info-nosotros{
+        /* border: solid 3px red !important; */
+        width: 450px !important;
+        margin-bottom: 6%;
+    }
+    .misionVision .cont-info-nosotros{
+        /* border: solid 3px red; */
+        display: flex;
+        flex-direction: column-reverse;
+        
+    }
+    .cont-seccion-acercaDeNosotros, .cont-seccion-mision{
+        padding: 4% !important;
+    }
+}
+@media (max-width: 705px){
+    .contenedor-portada svg{
+        /* border: solid 3px rgb(0, 255, 21); */
+        /* bottom: 43% !important; */
+    }
+    .carousel-indicators{
+        /* border: solid rgb(55, 0, 255) 3px; */
+        top: 42vh;
+    }
+}
+/* Media query para pantallas mas pequemas */
+@media ((max-width: 705px) and (max-height: 574px)){
+    .contenedor-portada svg{
+        /* border: solid 3px rgb(0, 255, 21); */
+        /* bottom: 40% !important; */
+    }
+    .carousel-indicators{
+        /* border: solid rgb(55, 0, 255) 3px; */
+        top: 50vh;
+    }
+}
+@media ((max-width: 700px) and (max-height: 574px)){
+    .contenedor-portada svg{
+        /* border: solid 3px rgb(68, 0, 255); */
+        /* bottom: 36% !important; */
+    }
+    
+    
+}
+@media (max-width: 661px) {
+    .carousel-caption{
+        width: 54%;
+    }
+    .carousel-caption h5{
+        /* border: solid 3px red; */
+        font-size: 2.8em;
+        
+    }
+    .carousel-caption p{
+        /* border: solid 3px red; */
+        font-size: 18px;
+    }
+}
+@media ((max-width: 650px) and (max-height: 574px)){
+    .contenedor-portada svg{
+        /* border: solid 3px rgb(30, 255, 0); */
+        /* bottom: 30% !important; */
+    }
+    .carousel-indicators{
+        /* border: solid rgb(55, 0, 255) 3px; */
+        top: 50vh;
+    }
+}
+@media ((max-width: 580px) and (max-height: 574px)){
+    .contenedor-portada svg{
+        /* border: solid 3px rgb(17, 0, 255); */
+        /* bottom: 30% !important; */
+    }
+    .carousel-indicators{
+        /* border: solid rgb(55, 0, 255) 3px; */
+        top: 50vh;
+    }
+}
+@media (max-width: 571px) {
+    .contenedor-portada svg{
+        /* border: solid 3px rgb(17, 0, 255); */
+        /* bottom: 55% !important; */
+    }
+    .carousel-caption{
+        /* border: solid 3px rgb(0, 255, 242); */
+        width: 60% !important;
+        
+    }
+    .carousel-caption h5{
+        /* border: solid 3px red; */
+        font-size: 2.5em;
+        
+    }
+    .carousel-caption p{
+        /* border: solid 3px red; */
+        font-size: 18px;
+    }
+    
+}
+@media (max-width: 518px) {
+    .carousel-caption{
+        /* border: solid 3px rgb(0, 255, 242); */
+        width: 65% !important;
+        
+    }
+    
+    
+}
+@media (max-width: 571px) {
+    .contenedor-portada svg{
+        /* border: solid 3px rgb(17, 0, 255); */
+        /* bottom: 55% !important; */
+    }
+    .carousel-caption{
+        /* border: solid 3px rgb(0, 255, 242); */
+        width: 60% !important;
+        
+    }
+    .carousel-caption h5{
+        /* border: solid 3px red; */
+        font-size: 2.5em;
+        
+    }
+    .carousel-caption p{
+        /* border: solid 3px red; */
+        font-size: 18px;
+    }
+    
+}
+@media (max-width: 515px){
+    .contenedor-portada{
+        /* border: solid 3px red; */
+        width: 100% !important;
+        height: 50vh !important;
+    }
+    .contenedor-portada svg{
+        /* border: solid 3px rgb(17, 0, 255); */
+        /* bottom: 42% !important; */
+    }
+}
+
+@media ((max-width: 515px) and (max-height: 574px)){
+    .contenedor-portada svg{
+        /* border: solid 3px rgb(17, 0, 255); */
+        /* bottom: 35% !important; */
+    }
+    .carousel-indicators{
+        /* border: solid rgb(55, 0, 255) 3px; */
+        top: 36vh;
+    }
+}
+@media (max-width: 489px) {
+
+    .cont-seccion-acercaDeNosotros{
+        margin-top: 4%;
+    }
+
+    .cont-seccion-acercaDeNosotros img,.cont-seccion-acercaDeNosotros  .text-info-nosotros
+    ,.cont-seccion-mision img, .cont-seccion-mision .text-info-nosotros,
+    .cont-seccion-vision .text-info-nosotros, .cont-seccion-vision img{
+       /* border: solid 3px red; */
+       width: 350px !important;
+    }
+    .cont-seccion-acercaDeNosotros img, .cont-seccion-mision img, .cont-seccion-vision img{
+        /* border: solid 3px rgb(0, 255, 0); */
+        height: 250px !important;
+    }
+
+}
+@media (max-width: 479px) {
+    .carousel-caption{
+        /* border: solid 3px red; */
+        width: 65% !important;
+
+    }
+    .carousel-caption h5{
+        font-size: 39px;
+    }
+    .carousel-caption p{
+        font-size: 17px;
+    }
+    
+}
+
+@media ((max-width: 457px) and (max-height: 574px)){
+    .contenedor-portada svg{
+        /* border: solid 3px rgb(17, 0, 255); */
+        /* bottom: 30% !important; */
+    }
+    .carousel-indicators{
+        /* border: solid rgb(55, 0, 255) 3px; */
+        top: 36vh;
+    }
+}
+@media (max-width: 433px) {
+    .carousel-caption p{
+        font-size: 15.7px;
+    }
+    
+}
+
+@media (max-width: 406px){
+    .contenedor-portada svg{
+        display: none;
+    }
+    .carousel-indicators{
+        /* border: solid rgb(55, 0, 255) 3px; */
+        top: 25vh;
+    }
+    .contenedor-portada{
+        /* border: solid 3px red; */
+        width: 100% !important;
+        height: 30vh !important;
+    }
+    .cont-seccion-beneficio{
+        padding-top: 8%;
+    }
+
+}
+/*Fin Media query para pantallas mas pequemas */
