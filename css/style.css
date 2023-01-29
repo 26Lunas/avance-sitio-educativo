@@ -367,6 +367,19 @@ body{
     justify-content: space-around;
     width: 70%;
 }
+.redesSociales{
+    /* border: solid 3px red; */
+    width: 90px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.redesSociales i{
+    color: var(--colorFondo);
+    font-size: 25px;
+    
+}
 
 .cont-recursos p:hover, .cont-eventos-piePagina p:hover, .cont-redesSociales-footer p:hover{
     color: #96bcfd;
