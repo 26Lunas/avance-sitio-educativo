@@ -1,6 +1,19 @@
 
 $(function() {
     console.log("Jquery esta funcionando");
+
+    $(".hinno").hover(function () {
+      let texto = document.getElementById('texto_enblemas1');
+      $(texto).toggle('.ocultar');
+    })
+    $(".escudo").hover(function () {
+      let texto = document.getElementById('texto_enblemas2');
+      $(texto).toggle('.ocultar');
+    })
+    $(".bandera").hover(function () {
+      let texto = document.getElementById('texto_enblemas3');
+      $(texto).toggle('.ocultar');
+    })
 });
 
 $(document).ready(function(){
