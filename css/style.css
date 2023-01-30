@@ -357,7 +357,7 @@ body{
     flex-direction: column;
     background: #4474985b;
     border-radius: 15px;
-    padding: 1% 1% 1% 0.5%;
+    padding: 1% 1% 1% 0;
     box-shadow: var(--colorAzulMarinoClaro) 0 5px 5px;
 
 }
