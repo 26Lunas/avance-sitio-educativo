@@ -29,11 +29,6 @@
         /* border: solid 3px red; */
         width: 70%;
     }
-    
-    .carousel-caption h5{
-        /* border: solid 3px red; */
-        /* font-size: 3.4em; */
-    }
 }
 @media (max-width: 849px) {
     .carousel-caption{
@@ -85,6 +80,37 @@
         font-size: 19px;
     }
 }
+@media (max-width: 616px){
+    .cont-info-pie-pagina div{
+        /* border: solid 3px red; */
+        margin-bottom: 2%;
+    }
+}
+@media (max-width: 662px){
+    .cont-creditos{
+        justify-content: center;
+    }
+    .cont-logo-info{
+        width: 170px;
+    }
+    .cont-info-pie-pagina{
+        padding-left: 4%;
+    }
+}
+@media (max-width: 662px){
+    .pie-pagina, .cont-info-pie-pagina{
+        justify-content: center !important;
+    }
+    
+    
+    .cont-info-pie-pagina{
+        padding-left: 0;
+        margin-bottom: 2%;
+    }
+    .cont-logo-info{
+        width: 190px;
+    }
+}
 
 
 @media (max-width: 575px) {
@@ -92,6 +118,10 @@
         /* border: solid 3px red; */
         font-size: 55px;
         
+    }
+    .pie-pagina{
+        flex-direction: column-reverse;
+        /* border: solid 3px red; */
     }
     
 }
@@ -124,6 +154,11 @@
         height: 250px !important;
     }
 
+}
+@media (max-width: 487px){
+    .cont-redesSociales-footer{
+        width: 190px !important;
+    }
 }
 @media (max-width: 479px) {
 
