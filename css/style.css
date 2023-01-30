@@ -30,10 +30,10 @@ body{
     /* background: var(--colorFondo); */
     /* box-shadow: rgb(180, 180, 180) 2px 1px 5px; */
 }
-/* .navbar-nav{
-    background: #8297ab36;
+.navbar-nav{
+    /* background: #8297ab36; */
     
-} */
+}
 .navbar img{
     width: 4.2em;
 }
@@ -97,7 +97,7 @@ body{
 /* Portada */
 .contenedor-portada{
     width: 100%;
-    height: 98vh;
+    height: 80vh;
     /* border: solid red 3px; */
     /* margin-bottom: 5%; */
     background: var(--colorficuras);
@@ -155,6 +155,9 @@ body{
 }
 .carousel-caption h5, .carousel-caption p{
     text-shadow: var(--colorAzulMarinoClaro) 1px 10px 15px;
+}
+.carousel-caption-3{
+    height: 55%;
 }
 .carousel-indicators{
     /* border: solid red 3px; */
