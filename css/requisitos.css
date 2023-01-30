@@ -1,0 +1,78 @@
+
+
+:root{
+    --colorFondo:  #fffefe;
+    --colorficuras: #f1f5f7;
+    --colorAzulMarino: #1D3763;
+    --colorAzulGrisOscuro: #8297ab;
+    --colorAzulMarinoClaro: #447498;
+}
+
+.navbar{
+    position: static !important;
+    top: 0;
+    box-shadow:var(--colorAzulMarinoClaro) 1px 1px 5px !important;
+    background: var(--colorFondo) !important;
+    /* margin-bottom: .5%; */
+}
+.cont-protada-info, .sesion-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cont-protada-info{
+    /* border: solid 3px red; */
+    width: 100%;
+    height: 30vh;
+    background: url('../img/img-info-page.jpg') no-repeat bottom;
+    background-size: cover;
+    flex-direction: column;
+
+}
+.cont-protada-info h1{
+    color: var(--colorFondo);
+    text-shadow: var(--colorFondo) 1px 1px 1px;
+    font-weight: 700;
+}
+
+.cont-protada-info p, .cont-protada-info a, .cont-protada-info i{
+    /* border: solid 3px red; */
+    padding-left: .4%;
+    padding-right: .6%;
+}
+.cont-protada-info p{
+    /* border: solid 3px red; */
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: var(--colorficuras);
+}
+.cont-protada-info i{
+    color: var(--colorAzulMarino);
+}
+
+/* Inici de la sección de información */
+.sesion-info{
+    /* border: solid 3px red; */
+    width: 100%;
+    padding-top: 4%;
+}
+.cont-info-sesion{
+    /* border: solid 3px rgb(0, 81, 255); */
+    width: 84%;
+    align-items: flex-start;
+
+}
+.cont-info-sesion h3{
+    font-weight: 700;
+    font-size: 40px;
+}
+.cont-info-sesion h5{
+    font-size: 25px;
+}
+.cont-info-sesion p{
+    text-align: justify;
+    font-size: 17px;
+}

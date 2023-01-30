@@ -14,6 +14,18 @@ $(function() {
       let texto = document.getElementById('texto_enblemas3');
       $(texto).toggle('.ocultar');
     })
+    $("#quienesSomosR").on('click', function(event){
+      let enlace = this.hash
+      window.location = '../index.html#quieneSomos';
+    });
+    $("#fechasLimitesI").on('click', function(event){
+      let enlace = this.hash
+      window.location = 'admisiones/requisitos.html#fechasLimites';
+      
+    });
+    
+
+
 });
 
 $(document).ready(function(){
