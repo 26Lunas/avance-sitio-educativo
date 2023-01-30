@@ -113,8 +113,9 @@ body{
     height: 100%;
 }
 .contenedor-portada img{
-    object-fit: contain;
+    object-fit: cover;
     /* border: solid 3px red; */
+    height: 100% !important;
 }
 
 .contenedor-portada svg{
@@ -160,9 +161,8 @@ body{
     height: 55%;
 }
 .carousel-indicators{
-    /* border: solid red 3px; */
-    position: absolute !important;
-    top: 55vh;
+    /* border: solid rgb(55, 0, 255) 3px; */
+    top: 70vh;
 }
 
 
