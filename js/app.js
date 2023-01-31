@@ -23,6 +23,26 @@ $(function() {
       window.location = 'admisiones/requisitos.html#fechasLimites';
       
     });
+    $("#requerimientosP").on('click', function(event){
+      // let enlace = this.hash
+      window.location = 'admisiones/requisitos.html';
+      
+    });
+    $("#hinno").on('click', function(event){
+      // let enlace = this.hash
+      window.location = 'emblemas.html';
+      
+    });
+    $("#escudo").on('click', function(event){
+      // let enlace = this.hash
+      window.location = 'emblemas.html#escudoEmblemas';
+      
+    });
+    $("#bandera").on('click', function(event){
+      // let enlace = this.hash
+      window.location = 'emblemas.html#banderaEmblemas';
+      
+    });
     
 
 

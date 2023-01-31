@@ -70,8 +70,32 @@ body{
 }
 .cont-info-sesion h5{
     font-size: 25px;
+    font-weight: 600;
 }
 .cont-info-sesion p{
     text-align: justify;
-    font-size: 17px;
+    font-size: 16px;
+    
 }
+
+/* Sección Enblemas */
+.cont-info-hinno h3, .cont-info-hinno p{
+    text-align: center;
+}
+.cite-autor-himno{
+    text-align: left !important;
+    color: var(--colorAzulMarinoClaro);
+}
+.cite-autor-himno span{
+    font-weight: 700;
+}
+.cont-info-escudo{
+    margin-bottom: 10px;
+}
+.cont-info-escudo img,.cont-info-bandera img{
+    width: 350px;
+    margin-top: 5px;
+    background: var(--colorFondo);
+    box-shadow: var(--colorAzulMarinoClaro) 0 .5px 3px;
+}
+/*Fin Sección Enblemas */
