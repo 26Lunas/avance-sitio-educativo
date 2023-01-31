@@ -98,4 +98,7 @@ body{
     background: var(--colorFondo);
     box-shadow: var(--colorAzulMarinoClaro) 0 .5px 3px;
 }
+.lema{
+    text-align: center;
+}
 /*Fin Sección Enblemas */
