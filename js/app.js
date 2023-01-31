@@ -14,6 +14,8 @@ $(function() {
       let texto = document.getElementById('texto_enblemas3');
       $(texto).toggle('.ocultar');
     })
+
+    // Enlaces del menu
     $("#quienesSomosR").on('click', function(event){
       // let enlace = this.hash
       window.location = '../index.html#quieneSomos';
@@ -28,6 +30,9 @@ $(function() {
       window.location = 'admisiones/requisitos.html';
       
     });
+    //Fin enlaces del menu
+
+    // Emblemas
     $("#hinno").on('click', function(event){
       // let enlace = this.hash
       window.location = 'emblemas.html';
