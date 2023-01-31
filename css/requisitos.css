@@ -8,13 +8,11 @@
     --colorAzulMarinoClaro: #447498;
 }
 
-.navbar{
-    position: static !important;
-    top: 0;
-    box-shadow:var(--colorAzulMarinoClaro) 1px 1px 5px !important;
-    background: var(--colorFondo) !important;
-    /* margin-bottom: .5%; */
+body{
+    overflow-x: hidden;
+    background: var(--colorFondo);
 }
+
 .cont-protada-info, .sesion-info{
     display: flex;
     align-items: center;
@@ -22,6 +20,7 @@
 }
 .cont-protada-info{
     /* border: solid 3px red; */
+    margin-top: 94.8px;
     width: 100%;
     height: 30vh;
     background: url('../img/img-info-page.jpg') no-repeat bottom;
