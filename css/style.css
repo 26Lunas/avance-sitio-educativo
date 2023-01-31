@@ -399,6 +399,7 @@ body{
 
 }
 .pie-pagina{
+    z-index: 6;
     /* border: solid 3px red; */
     width: 100%;
     background: var(--colorAzulMarino);
@@ -458,6 +459,7 @@ body{
 }
 
 .efecto-curva-up{
+    z-index: 5;
     /* border: solid 3px red; */
     fill:var(--colorAzulMarino);
     position: relative;
