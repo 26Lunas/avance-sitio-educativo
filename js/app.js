@@ -18,7 +18,7 @@ $(function() {
     // Enlaces del menu
     $("#quienesSomosR").on('click', function(event){
       // let enlace = this.hash
-      window.location = '../index.html#quieneSomos';
+      window.location = 'index.html#quieneSomos';
     });
     $("#fechasLimitesI").on('click', function(event){
       // let enlace = this.hash
