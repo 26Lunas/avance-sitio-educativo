@@ -30,6 +30,11 @@
         width: 70%;
     }
 }
+@media (max-width: 886) {
+    .cont-info-pie-pagina p{
+        font-size: 10px !important;
+    }
+}
 @media (max-width: 849px) {
     .carousel-caption{
         /* border: solid 3px red; */
@@ -98,12 +103,13 @@
     }
 }
 @media (max-width: 662px){
-    .pie-pagina, .cont-info-pie-pagina{
+    /* .pie-pagina{
         justify-content: center !important;
     }
-    
+     */
     
     .cont-info-pie-pagina{
+        /* border: solid 3px red; */
         padding-left: 0;
         margin-bottom: 2%;
     }
@@ -120,8 +126,9 @@
         
     }
     .pie-pagina{
-        flex-direction: column-reverse;
+        /* flex-direction: column-reverse; */
         /* border: solid 3px red; */
+        justify-content: left !important;
     }
     
 }
