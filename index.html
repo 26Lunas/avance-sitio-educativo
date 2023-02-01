@@ -1,238 +1,368 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Estilos Css -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Link Media Query CSS -->
+    <link rel="stylesheet" href="css/mediaQuery.css" />
 
-  <!-- Estilos Css -->
-  <link rel="stylesheet" href="css/style.css" />
-  <!-- Link Media Query CSS -->
-  <link rel="stylesheet" href="css/mediaQuery.css">
+    <!-- Bootstrap v5.2-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/style-carusel-personal.css" />
 
-  <!-- Bootstrap v5.2-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
-  <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="css/style-carusel-personal.css" />
-  
+    <title>Colegio Montesión</title>
+  </head>
 
-  <title>Colegio Montesión</title>
-</head>
+  <body>
+    <div class="contenedor">
+      <div class="desenfocar ocultar" id="desenfocar"></div>
+      <!-- Menu de navegación -->
+      <nav class="navbar navbar-expand-lg" id="navbarScroll">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"
+            ><img src="img/logo.png" alt="Logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-<body>
-  <div class="contenedor">
-    <!-- Menu de navegación -->
-    <nav class="navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="Logo"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Inicio</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#quieneSomos">¿Quíenes somos?</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Admisiones</a
+                >
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-item" href="admisiones/requisitos.html"
+                      >Requisitos</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="#" id="fechasLimitesI"
+                      >Fechas limites</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="planDeEstudio.html"
+                  >Plan de estudios</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Calendario académico</a
+                >
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Días festivos</a></li>
+                  <li><a class="dropdown-item" href="#">Vacaciones</a></li>
+                  <li><a class="dropdown-item" href="#">Examenes</a></li>
+                </ul>
+              </li>
+            </ul>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#quieneSomos">¿Quíenes somos?</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">Admisiones</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="admisiones/requisitos.html">Requisitos</a></li>
-                <li><a class="dropdown-item" href="#" id="fechasLimitesI">Fechas limites</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="planDeEstudio.html">Plan de estudios</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">Calendario académico</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Días festivos</a></li>
-                <li><a class="dropdown-item" href="#">Vacaciones</a></li>
-                <li><a class="dropdown-item" href="#">Examenes</a></li>
-              </ul>
-            </li>
-          </ul>
-          
-          <button class="btn btn-outline btn-empezar">Iniciar Sesión</button>
-          
+            <button class="btn btn-outline btn-empezar">Iniciar Sesión</button>
+          </div>
         </div>
-      </div>
-    </nav>
-    <!-- Fin menu de navegación -->
+      </nav>
+      <!-- Fin menu de navegación -->
 
-    <div class="contenedor-portada">
-      <!-- Carrusel de la portada -->
-      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="true">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="img/img-prueba.jpg" class="d-block w-100" alt="..." />
-            <div class="carousel-caption">
-              <h5>Centro Educativo MONTE SION</h5>
-              <p>
-                Institución educativa privada y cristiana evangélica que
-                ofrece educación de excelencia en preescolar y primaria.
-              </p>
+      <div class="contenedor-portada">
+        <!-- Carrusel de la portada -->
+        <div
+          id="carouselExampleCaptions"
+          class="carousel slide"
+          data-bs-ride="true"
+        >
+          <div class="carousel-indicators">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleCaptions"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="img/img-prueba.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption">
+                <h5>Centro Educativo MONTE SION</h5>
+                <p>
+                  Institución educativa privada y cristiana evangélica que
+                  ofrece educación de excelencia en preescolar y primaria.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/img-prueba2.jpg" class="d-block w-100" alt="..." />
+              <div class="carousel-caption">
+                <h5>Desarrollo integral</h5>
+                <p>
+                  Promovemos el desarrollo integral satisfactorio en los
+                  estudiantes mediante la creación de ámbitos sanos y seguros.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="img/img-prueba3" class="d-block w-100" alt="..." />
+              <div class="carousel-caption carousel-caption-3">
+                <h5>Creatividad</h5>
+                <p>
+                  Estimular el espíritu científico y artístico de los
+                  estudiantes por medio de estrategias pedagógicas.
+                </p>
+              </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <img src="img/img-prueba2.jpg" class="d-block w-100" alt="..." />
-            <div class="carousel-caption">
-              <h5>Desarrollo integral</h5>
-              <p>
-                Promovemos el desarrollo integral satisfactorio en los estudiantes mediante la creación de ámbitos sanos y seguros.
-              </p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="img/img-prueba3" class="d-block w-100" alt="..." />
-            <div class="carousel-caption carousel-caption-3">
-              <h5>Creatividad</h5>
-              <p>
-                Estimular el espíritu científico y artístico de los estudiantes por medio de estrategias pedagógicas.
-              </p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
 
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path d="M0,128L120,160C240,192,480,256,720,266.7C960,277,1200,235,1320,213.3L1440,192L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
-        </svg>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path
+              d="M0,128L120,160C240,192,480,256,720,266.7C960,277,1200,235,1320,213.3L1440,192L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
+            ></path>
+          </svg>
+        </div>
+        <!-- Fin carrusel de la portada -->
       </div>
-      <!-- Fin carrusel de la portada -->
+      <!-- Fin portada -->
 
-      
-    </div>
-    <!-- Fin portada -->
-
-    <div class="cont-seccion-beneficio">
-      <div class="cont-texto-subTitulo">
-        <h2>Bienvenido al Centro Educativo Monte Sion</h2>
-        <p>
-          Una institución educativa privada. Aquí, nos enfocamos en el desarrollo
-          integral de nuestros estudiantes, proporcionando un ambiente enriquecedor que fomenta el aprendizaje,
-          en base a valores y principios cristianos.
-        </p>
-      </div>
-
-      <div class="cont-beneficios">
-        <div class="cont-beneficio beneficio-1">
-          <div class="circulo-valor icono-1"><i class="fa-solid fa-people-group"></i></div>
-          <p>Sentido de pertenencia</p>
-        </div>
-        <div class="cont-beneficio beneficio-2">
-          <div class="circulo-valor icono-2"><i class="fa-solid fa-leaf"></i></div>
-          <p>Concientización del medio ambiente</p>
-        </div>
-        <div class="cont-beneficio beneficio-3">
-          <div class="circulo-valor icono-3"><i class="fa-solid fa-people-carry-box"></i></div>
-          <p>Compromiso y Responbilidad</p>
-        </div>
-      </div>
-      <!-- Fin sección beneficios o valores -->
-
-      <!-- Inicio sección acerca de nosotros -->
-      <div class="cont-seccion-acercaDeNosotros" id="quieneSomos">
-        <div class="cont-info-nosotros">
-          <div class="text-info-nosotros">
-            <h5>¿Quíenes somos?</h5>
-            <p>
-              El Centro Educativo Cristiano Monte Sion, es una institución educativa cristiana evangélica,
-              de carácter privado que ofrece educación de excelencia en los niveles de preescolar
-              y primaria con énfasis en el idioma inglés, artes e integración de principios y valores
-              cristianos basados en la Palabra de Dios en todas las asignaturas, al mismo tiempo,
-              fortaleciendo la vida espiritual de los estudiantes.
-            </p>
-            <button class="btn btn-vermas">Ver más</button>
-          </div>
-
-          <img src="img/img-prueba6" alt="" />
-        </div>
-      </div>
-
-      <div class="cont-seccion-mision misionVision">
-        <div class="cont-info-nosotros">
-          <img src="img/img-prueba5" alt="" />
-
-          <div class="text-info-nosotros">
-            <h5>Misión Y Visión</h5>
-            <p><strong>Misión:</strong>
-              Formar niños y niñas en excelencia para que sean líderes competentes académicamente,
-              bajo el temor de Dios y con sentido de la labor social necesaria para la edificación de
-              una sociedad en mundo globalizado y en constante cambio por medio de una educación integral,
-              basada en los principios y valores cristianos de la palabra de Dios.
-            </p>
-            <p class="d-none"><strong>Visión:</strong>
-              El Centro Educativo Monte Sion se proyecta como una institución cristiana que favorece la formación integral de los estudiantes, fomentando la superación personal, cooperación, respeto, solidaridad, creatividad, responsabilidad y sentido de pertenencia; que sea reconocida por su calidad académica y educativa, por su orientación a resultados y por su innovación constante.
-            </p>
-            <button class="btn btn-vermas">Ver más</button>
-          </div>
-        </div>
-      </div>
-
-      <div class="cont-seccion-vision">
-        <div class="cont-info-nosotros">
-          <div class="text-info-nosotros">
-            <h5>Objetivos</h5>
-            <p>
-              Alinear los procesos educativos que realiza el Centro Educativo Cristiano Monte Sion,
-              llevando a cabo su misión y visión de acuerdo a las normas establecidas por el Ministerio de Educación Nacional
-              y de la Secretaria de Educación Departamental y Distrital, fundamentados en los principios y
-              valores cristianos que permiten la formación integral de niños y niñas como líderes en excelencia académica,
-              vida cristiana y responsabilidad social. 
-            </p>
-            <button class="btn btn-vermas">Ver más</button>
-          </div>
-
-          <img src="img/img-prueba7" alt="" />
-        </div>
-      </div>
-
-      <!-- Sección equipo de trabajo -->
-      <div class="cont-personal">
-        <div class="cont-text-personal">
-          <h2>EQUIPO DE TRABAJO</h2>
+      <div class="cont-seccion-beneficio">
+        <div class="cont-texto-subTitulo">
+          <h2>Bienvenido al Centro Educativo Monte Sion</h2>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus
-            minus quibusdam ullam error corrupti dicta eius quod? Voluptatem
-            ea, impedit recusandae esse deserunt.
+            Una institución educativa privada. Aquí, nos enfocamos en el
+            desarrollo integral de nuestros estudiantes, proporcionando un
+            ambiente enriquecedor que fomenta el aprendizaje, en base a valores
+            y principios cristianos.
           </p>
         </div>
 
-        <div class="cont-carrusel-personal">
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+        <div class="cont-beneficios">
+          <div class="cont-beneficio beneficio-1">
+            <div class="circulo-valor icono-1">
+              <i class="fa-solid fa-people-group"></i>
+            </div>
+            <p>Sentido de pertenencia</p>
+          </div>
+          <div class="cont-beneficio beneficio-2">
+            <div class="circulo-valor icono-2">
+              <i class="fa-solid fa-leaf"></i>
+            </div>
+            <p>Concientización del medio ambiente</p>
+          </div>
+          <div class="cont-beneficio beneficio-3">
+            <div class="circulo-valor icono-3">
+              <i class="fa-solid fa-people-carry-box"></i>
+            </div>
+            <p>Compromiso y Responbilidad</p>
+          </div>
+        </div>
+        <!-- Fin sección beneficios o valores -->
+
+        <!-- Inicio sección acerca de nosotros -->
+
+        <div class="cont-seccion-acercaDeNosotros" id="quieneSomos">
+          <div class="cont-info-nosotros">
+            <div class="text-info-nosotros" id="enfoca-aboutme">
+              <h5>¿Quíenes somos?</h5>
+              <p>
+                El Centro Educativo Cristiano Monte Sion, es una institución
+                educativa cristiana evangélica, de carácter privado que ofrece
+                educación de excelencia en los niveles de preescolar y primaria
+                con énfasis en el idioma inglés, artes e integración de
+                principios y valores cristianos basados en la Palabra de Dios en
+                todas las asignaturas, al mismo tiempo, fortaleciendo la vida
+                espiritual de los estudiantes.
+                <span class="ocultar" id="historia"
+                  ><br /><br /><strong>Historia:</strong> El CENTRO EDUCATIVO
+                  MONTE SION inicio actividades en febrero de 1998, fundado por
+                  la iglesia cristiana cuadrangular de california. Fue aprovado
+                  por la secretaria de educacion distrital de Barranquilla el 07
+                  de Mayo del 2001. Esta institucion educativa bino a satisfacer
+                  una necesidad de los habitantes del sur occdente de
+                  Barranquilla, que deceaba para sus hijos una educacion
+                  integral. Despues de una larga busque de del sitio ideal para
+                  hacer realidad la gran inspiracion se hallo el terreno del
+                  colegio ubicado en la calle 91 N° 6-57 barrio California,
+                  posteriormente se transladó a un espacio mas amplio, comodo y
+                  propio, que se encuentra ubicado en la calle 91 N° 6-89 Barrio
+                  California. El CENTRO EDUCATIVO MONTE SION inparte enseñanza
+                  en los niveles de preescolar y basica primaria. Es una
+                  institucion eductiva cristiana de carácter mixto cuyos
+                  procesos educativos se desarrollan sobre la base de proyectos
+                  elaborados por la comunidad educativa tratando de satisfacer
+                  sus necesidades.</span
+                >
+              </p>
+              <button class="btn btn-vermas" id="verMasQuienesSomos">
+                Ver más
+              </button>
+            </div>
+
+            <img src="img/img-prueba6" alt="" />
+          </div>
+        </div>
+
+        <div class="cont-seccion-mision misionVision" id="misionVision">
+          <div class="cont-info-nosotros">
+            <img src="img/img-prueba5" alt="" />
+
+            <div class="text-info-nosotros" id="enfoca-mision">
+              <h5>Misión Y Visión</h5>
+              <p>
+                <strong>Misión:</strong>
+                Formar niños y niñas en excelencia para que sean líderes
+                competentes académicamente, bajo el temor de Dios y con sentido
+                de la labor social necesaria para la edificación de una sociedad
+                en mundo globalizado y en constante cambio por medio de una
+                educación integral, basada en los principios y valores
+                cristianos de la palabra de Dios.
+                <span class="ocultar" id="vision"
+                  ><br /><br /><strong>Visión:</strong> El Centro Educativo
+                  Monte Sion se proyecta como una institución cristiana que
+                  favorece la formación integral de los estudiantes, fomentando
+                  la superación personal, cooperación, respeto, solidaridad,
+                  creatividad, responsabilidad y sentido de pertenencia; que sea
+                  reconocida por su calidad académica y educativa, por su
+                  orientación a resultados y por su innovación constante.</span
+                >
+              </p>
+              <button class="btn btn-vermas" id="verMasMV">Ver más</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cont-seccion-vision" id="objetivos">
+          <div class="cont-info-nosotros">
+            <div class="text-info-nosotros" id="enfoca-obejetivos">
+              <h5>Objetivos</h5>
+              <p>
+                Alinear los procesos educativos que realiza el Centro Educativo
+                Cristiano Monte Sion, llevando a cabo su misión y visión de
+                acuerdo a las normas establecidas por el Ministerio de Educación
+                Nacional y de la Secretaria de Educación Departamental y
+                Distrital, fundamentados en los principios y valores cristianos
+                que permiten la formación integral de niños y niñas como líderes
+                en excelencia académica, vida cristiana y responsabilidad
+                social.
+                <span class="ocultar" id="text-objetivos">
+                  <br /><br /><strong>Objetivos específicos</strong>
+                  <br />
+                  &#8226; Formar integralmente a los estudiantes estimulando el
+                  desarrollo de competencia académica, carácter cristiano y
+                  responsabilidad social.
+                  <br />
+                  &#8226; Garantizar un Proyecto Educativo Institucional, acorde
+                  con la misión, la visión y la filosofía cristiana, basada en
+                  principios y valores de la Palabra de Dios.
+                  <br />
+                  &#8226; Estimular habilidades en el dominio de la segunda
+                  lengua (inglés) como parte del desarrollo multicultural.
+                  <br />
+                  &#8226; Evaluar permanentemente las distintas actividades
+                  de la institución para llegar en forma conjunta a la
+                  excelencia institucional pasar controlado - vigilado
+                </span>
+              </p>
+              <button class="btn btn-vermas" id="verMasObjetivos">Ver más</button>
+            </div>
+
+            <img src="img/img-prueba7" alt="" />
+          </div>
+        </div>
+
+        <!-- Sección equipo de trabajo -->
+        <div class="cont-personal">
+          <div class="cont-text-personal">
+            <h2>EQUIPO DE TRABAJO</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus
+              minus quibusdam ullam error corrupti dicta eius quod? Voluptatem
+              ea, impedit recusandae esse deserunt.
+            </p>
+          </div>
+
+          <div class="cont-carrusel-personal">
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
 
             <div class="swiper-container mySwiper">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
-                  <img src="img/imgPersonal/img-perfil-equipo-prueba.jpg" alt="" />
+                  <img
+                    src="img/imgPersonal/img-perfil-equipo-prueba.jpg"
+                    alt=""
+                  />
                   <div class="card-description">
                     <div class="card-title">
                       <h4>Nombre Apellido</h4>
@@ -246,7 +376,10 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <img src="img/imgPersonal/img-perfil-equipo-prueba2.jpg" alt="" />
+                  <img
+                    src="img/imgPersonal/img-perfil-equipo-prueba2.jpg"
+                    alt=""
+                  />
                   <div class="card-description">
                     <div class="card-title">
                       <h4>Nombre Apellido</h4>
@@ -260,7 +393,10 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <img src="img/imgPersonal/img-perfil-equipo-prueba3.jpg" alt="" />
+                  <img
+                    src="img/imgPersonal/img-perfil-equipo-prueba3.jpg"
+                    alt=""
+                  />
                   <div class="card-description">
                     <div class="card-title">
                       <h4>Nombre Apellido</h4>
@@ -274,7 +410,10 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <img src="img/imgPersonal/img-perfil-equipo-prueba4.jpg" alt="" />
+                  <img
+                    src="img/imgPersonal/img-perfil-equipo-prueba4.jpg"
+                    alt=""
+                  />
                   <div class="card-description">
                     <div class="card-title">
                       <h4>Nombre Apellido</h4>
@@ -288,7 +427,10 @@
                   </div>
                 </div>
                 <div class="swiper-slide">
-                  <img src="img/imgPersonal/img-perfil-equipo-prueba5.png" alt="" />
+                  <img
+                    src="img/imgPersonal/img-perfil-equipo-prueba5.png"
+                    alt=""
+                  />
                   <div class="card-description">
                     <div class="card-title">
                       <h4>Nombre Apellido</h4>
@@ -317,91 +459,109 @@
                 </div>
               </div>
             </div>
+          </div>
         </div>
-      </div>
-      <!-- Fin sección equipo de trabajo -->
+        <!-- Fin sección equipo de trabajo -->
 
-      <!-- 3 Botones -->
-      <div class="cont-enblemas">
-        <a href="#" class="btn-enblemas hinno" id="hinno"><p class="ocultar" id="texto_enblemas1">Himno</p><i class="fa-solid fa-music"></i></a>
-        <a href="#" class="btn-enblemas escudo" id="escudo"><p class="ocultar"  id="texto_enblemas2">Escudo</p><i class="fa-solid fa-heart"></i></a>
-        <a href="#" class="btn-enblemas bandera" id="bandera"><p class="ocultar"  id="texto_enblemas3">Bandera</p><i class="fa-solid fa-flag"></i></a>
-      </div>
-      
-      <!-- Fin 3 Botones -->
+        <!-- 3 Botones -->
+        <div class="cont-enblemas">
+          <a href="#" class="btn-enblemas hinno" id="hinno">
+            <p class="ocultar" id="texto_enblemas1">Himno</p>
+            <i class="fa-solid fa-music"></i>
+          </a>
+          <a href="#" class="btn-enblemas escudo" id="escudo">
+            <p class="ocultar" id="texto_enblemas2">Escudo</p>
+            <i class="fa-solid fa-heart"></i>
+          </a>
+          <a href="#" class="btn-enblemas bandera" id="bandera">
+            <p class="ocultar" id="texto_enblemas3">Bandera</p>
+            <i class="fa-solid fa-flag"></i>
+          </a>
+        </div>
 
-      <!-- Inicio pie de pagína -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="efecto-curva-up">
-        <path d="M0,160L120,154.7C240,149,480,139,720,149.3C960,160,1200,192,1320,208L1440,224L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"></path>
-      </svg>
-      <footer class="pie-pagina">
-        <div class="cont-logo-info">
-          <img src="img/logo.png" alt="Logo">
+        <!-- Fin 3 Botones -->
+
+        <!-- Inicio pie de pagína -->
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 1440 320"
+          class="efecto-curva-up"
+        >
+          <path
+            d="M0,160L120,154.7C240,149,480,139,720,149.3C960,160,1200,192,1320,208L1440,224L1440,320L1320,320C1200,320,960,320,720,320C480,320,240,320,120,320L0,320Z"
+          ></path>
+        </svg>
+        <footer class="pie-pagina">
+          <div class="cont-logo-info">
+            <img src="img/logo.png" alt="Logo" />
+            <p>
+              Educamos con integridad para la excelencia<br />
+              Preescolar y Básica primaria<br />
+              Res. No. 0674– mayo 7 de 2.001<br />
+              Código Dane: 308001019117 – Nit: 900116105-9
+            </p>
+          </div>
+
+          <div class="cont-info-pie-pagina">
+            <div class="cont-contacto">
+              <h6>Contactanos</h6>
+              <p>Dirección: Calle 91 N° 6 -89 Barranquilla, Colombia</p>
+              <p>Teléfono: 301 3883072</p>
+              <p>Correo electronico:</p>
+            </div>
+            <div class="cont-recursos">
+              <h6>Recursos Educativos</h6>
+              <p>Manuel de conviviencia</p>
+              <p>Recusos de aprendizaje</p>
+            </div>
+            <div class="cont-eventos-piePagina">
+              <h6>Noticias y Eventos</h6>
+              <p>Evento 1</p>
+              <p>Evento 2</p>
+            </div>
+            <div class="cont-redesSociales-footer">
+              <h6>Siguenos</h6>
+              <div class="redesSociales">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+            </div>
+          </div>
+        </footer>
+        <!-- Fin pie de pagína -->
+        <div class="cont-creditos">
+          <p>&copy; Monte Sion. Todos los derechos reservados.</p>
           <p>
-            Educamos con integridad para la excelencia<br>
-            Preescolar y Básica primaria<br>
-            Res. No. 0674– mayo 7 de 2.001<br>
-            Código Dane: 308001019117 – Nit: 900116105-9
-
+            Created by <strong>Yamir Serret</strong> and
+            <strong>Yireth Imitola</strong>.
           </p>
         </div>
 
-        <div class="cont-info-pie-pagina">
-          <div class="cont-contacto">
-            <h6>Contactanos</h6>
-            <p>Dirección: Calle 91 N° 6 -89 </p>
-            <p>Teléfono: 301 3883072</p>
-            <p>Correo electronico:</p>
-          </div>
-          <div class="cont-recursos">
-            <h6>Recursos Educativos</h6>
-            <p>Manuel de conviviencia</p>
-            <p>Recusos de aprendizaje</p>
-          </div>
-          <div class="cont-eventos-piePagina">
-            <h6>Noticias y Eventos</h6>
-            <p>Evento 1</p>
-            <p>Evento 2</p>
-          </div>
-          <div class="cont-redesSociales-footer">
-            <h6>Siguenos</h6>
-            <div class="redesSociales">
-              <i class="fa-brands fa-facebook"></i>
-              <i class="fa-brands fa-instagram"></i>
-              <i class="fa-brands fa-whatsapp"></i>
-            </div>
-          </div>
-          
-        </div>
-
-        
-      </footer>
-      <!-- Fin pie de pagína -->
-      <div class="cont-creditos">
-        <p>&copy; Monte Sion. Todos los derechos reservados.</p>
-        <p>Created by <strong>Yamir Serret</strong> and <strong>Yireth Imitola</strong>.</p>
+        <!-- Fin sección acerca de nosotros -->
       </div>
-
-      <!-- Fin sección acerca de nosotros -->
     </div>
-  </div>
 
+    <!-- File Jquery -->
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
 
-   <!-- File Jquery -->
-   <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <!-- JS Bootstrap v5.2 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 
-  <!-- JS Bootstrap v5.2 -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- File JS -->
+    <script src="js/app.js"></script>
 
-   <!-- File JS -->
- <script src="js/app.js"></script>
- 
-  <!-- Swiper JS -->
-  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-  <script src="js/carrusel-swiper.js"></script>
-  <!-- Font awesome -->
-  <script src="https://kit.fontawesome.com/34c89acf97.js" crossorigin="anonymous"></script>
- 
-</body>
-
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/carrusel-swiper.js"></script>
+    <!-- Font awesome -->
+    <script
+      src="https://kit.fontawesome.com/34c89acf97.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
