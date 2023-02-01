@@ -441,7 +441,7 @@ body{
     width: 20%;
 }
 .cont-logo-info p{
-    text-align: justify;
+    font-size: 13px;
 }
 .cont-logo-info img{
     width: 100%;
@@ -452,9 +452,9 @@ body{
     /* border: solid 3px rgb(0, 255, 0); */
     width: 70%;
 }
-.cont-info-pie-pagina div{
-    /* border: solid 3px red; */
-    width: 190px;
+
+.cont-eventos-piePagina{
+    margin-right: 2%;
 }
 .redesSociales{
     /* border: solid 3px red; */

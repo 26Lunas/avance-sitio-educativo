@@ -3,25 +3,23 @@ $(function() {
     console.log("Jquery esta funcionando");
 
     const lastScroll = $(window).scrollTop();
-    console.log(lastScroll);
+    // console.log(lastScroll);
     
     $(window).scroll(function(){
-      console.log(lastScroll);
       const currentScroll = $(window).scrollTop();
       // console.log(currentScroll)
 
       let navbar = document.getElementById('navbarScroll');
       if((currentScroll === 0)){
-        console.log(currentScroll + " Inicio")
+        // console.log(currentScroll + " Inicio")
         $(navbar).removeClass('navbarScroll');
         // console.log("Inicio")
       }else if(currentScroll < lastScroll){
-        console.log(currentScroll + " Subiendo")
+        // console.log(currentScroll + " Subiendo")
         $(navbar).addClass('navbarScroll');
         // console.log("Subiendo")
       }else if(currentScroll > lastScroll){
-        console.log(lastScroll)
-        console.log(currentScroll + " Bajando")
+        // console.log(currentScroll + " Bajando")
         $(navbar).removeClass('navbarScroll');
         // console.log("Bajando...")
       }
